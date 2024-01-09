@@ -15,7 +15,7 @@ Launcher=file:///usr/share/applications/geany.desktop
 # tempfile.delete(filename)
 
 # filetouch => parametres (content)
-# mv2 => parametres (path, deleted, user)
+# mv2 => parametres (path, deleted='true', user='home')
 # delete => parametres (filename)
 
 __github__='@knowhw'
