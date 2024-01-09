@@ -14,7 +14,9 @@ Launcher=file:///usr/share/applications/geany.desktop
 # tempfile.mv2(path)
 # tempfile.delete(filename)
 
+
 # filetouch => parametres (content)
+# pkexec.mv2 => parametres (path, deleted='true', user='root')
 # mv2 => parametres (path, deleted='true', user='home')
 # delete => parametres (filename)
 
