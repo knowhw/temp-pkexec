@@ -1,5 +1,4 @@
 
-
 content = '''[PlankDockItemPreferences]
 Launcher=file:///usr/share/applications/geany.desktop
 '''
@@ -19,6 +18,5 @@ Launcher=file:///usr/share/applications/geany.desktop
 # pkexec.mv2 => parametres (path, deleted='true', user='root')
 # mv2 => parametres (path, deleted='true', user='home')
 # delete => parametres (filename)
-
-__github__='@knowhw'
+# _save_directory => default: /tmp/temporary.save
 
