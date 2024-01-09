@@ -1,8 +1,10 @@
 
+
 content = '''[PlankDockItemPreferences]
 Launcher=file:///usr/share/applications/geany.desktop
 '''
 # import temp
+
 # path='/home/elementary/.config/plank/dock1/launchers/geany.dockitem'
 
 # tempfile, filename = temp.filetouch(content)
@@ -12,6 +14,5 @@ Launcher=file:///usr/share/applications/geany.desktop
 # tempfile.delete(filename)
 
 
-
-
 __github__='@knowhw'
+
