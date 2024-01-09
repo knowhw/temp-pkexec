@@ -3,7 +3,7 @@ content = '''[PlankDockItemPreferences]
 Launcher=file:///usr/share/applications/geany.desktop
 '''
 
-# from temp import temp
+# import temp
 
 # path='/home/elementary/.config/plank/dock1/launchers/geany.dockitem'
 
