@@ -36,9 +36,9 @@ class temp:
 		proc= 'cp' if deleted == 'false' else 'mv' 
 		
 		system ('cd /tmp && mkdir %s > /dev/null 2>1' % _save_directory)
-		"""setapp: kurtarma dizini /tmp/temporary.save """
+		"""_save_directory: kurtarma dizini /tmp/temporary.save """
 		system (_pkexec % (proc, filename, path) if user == 'root' else "%s %s %s" % (proc, filename, path))
-		"""path: usr/share/applications/test.desktop"""
+		
 
 
 		if proc == "cp":
