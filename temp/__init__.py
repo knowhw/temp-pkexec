@@ -31,7 +31,7 @@ class temp:
 		create_save (_save % (filename,_save_directory, '%s.save' % temp_file))
 	
 	def mv2(path, 
-	deleted='true', user=''):
+	deleted='true', user='home'):
 	
 		proc= 'cp' if deleted == 'false' else 'mv' 
 		
