@@ -8,9 +8,10 @@ Launcher=file:///usr/share/applications/geany.desktop
 # path='/home/elementary/.config/plank/dock1/launchers/geany.dockitem'
 
 # tempfile, name = temp.filetouch(content)
-# tempfile.pkexec.mv2(path)
-
 # tempfile.mv2(path)
+
+
+# tempfile.pkexec.mv2(path)
 # tempfile.delete(name)
 
 
