@@ -1,7 +1,8 @@
 
 
+
 from os import fdopen, system
-from os import remove as delete_tempfile
+from os import remove
 from os import system as create_save
 from os import path
 from os import getenv
@@ -9,12 +10,10 @@ from os import getenv
 import tempfile
 
 
-_name,_pkexec = 'name of the file is: %s','pkexec %s %s %s'
+_name,_pkexec = "name of the file is: %s","pkexec %s %s %s "
 
 _save_directory='cache.save'
 _save='cp %s /tmp/%s/%s'
-
-
 
 
 
@@ -31,26 +30,31 @@ class temp:
 		create_save (_save % (filename,_save_directory, '%s.save' % temp_file))
 	
 	def mv2(path, 
-	deleted='true', user='home'):
+	deleted='true', user=''):
 	
 		proc= 'cp' if deleted == 'false' else 'mv' 
 		
 		system ('cd /tmp && mkdir %s > /dev/null 2>1' % _save_directory)
-		"""_save_directory: kurtarma dizini /tmp/temporary.save """
+		"""setapp: kurtarma dizini /tmp/temporary.save """
 		system (_pkexec % (proc, filename, path) if user == 'root' else "%s %s %s" % (proc, filename, path))
-		
+		"""path: usr/share/applications/test.desktop"""
 
 
 		if proc == "cp":
 			temp.__create_savefile()
 	def delete(filename): 
-			delete_tempfile(filename)
-			
+		
+		base = path.basename(filename)
+		base = chr(47).join(['/tmp', _save_directory, '%s.save' % base])
+		
+		
+		[ remove('%s' % item) for item in ( filename, base ) ]
+		
+
 	class pkexec:
 		def mv2(path, 
 		deleted='true', user='root'):
 			
-
 			
 			return temp.mv2(path, deleted, user)
 def filetouch(content):
