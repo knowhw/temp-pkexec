@@ -1,4 +1,5 @@
 
+import tempfile
 
 
 from os import fdopen, system
@@ -7,13 +8,14 @@ from os import system as create_save
 from os import path
 from os import getenv
 
-import tempfile
 
 
 _name,_pkexec = "name of the file is: %s","pkexec %s %s %s "
 
 _save_directory='cache.save'
 _save='cp %s /tmp/%s/%s'
+
+
 
 
 
@@ -35,7 +37,7 @@ class temp:
 		proc= 'cp' if deleted == 'false' else 'mv' 
 		
 		system ('cd /tmp && mkdir %s > /dev/null 2>1' % _save_directory)
-		"""setapp: kurtarma dizini /tmp/temporary.save """
+		"""setapp: kurtarma dizini /tmp/cache.save """
 		system (_pkexec % (proc, filename, path) if user == 'root' else "%s %s %s" % (proc, filename, path))
 		"""path: usr/share/applications/test.desktop"""
 
