@@ -29,7 +29,7 @@ tempfile.mv2(path)
 # pkexec.mv2 => parametres (path, deleted='true', user='root')
 # mv2 => parametres (path, deleted='true', user='home')
 # delete => parametres (name)
-# _save_directory => default: /tmp/temporary.save
+# _save_directory => default: /tmp/cache.save
 ~~~
 
 
