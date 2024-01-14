@@ -20,7 +20,6 @@ tempfile, name = temp.filetouch(content)
 tempfile.mv2(path)
 
 # tempfile.pkexec.mv2(path)
-# tempfile.delete(name)
 
 ~~~
 ## Parametres
